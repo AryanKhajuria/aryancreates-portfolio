@@ -8,7 +8,7 @@ const cards=document.querySelectorAll(".card");const io=new IntersectionObserver
   const items = document.querySelectorAll(
     '.card, .service-list span, .whygrid > div, .contact-option, ' +
     '.section > .label, .intro, .services-section > h2, .why > h2, ' +
-    '.contact > h2, .contact-lead'
+    '.contact > h2, .contact-lead, .about-reveal'
   );
   if (!items.length || !('IntersectionObserver' in window)) return;
 
@@ -32,6 +32,11 @@ const cards=document.querySelectorAll(".card");const io=new IntersectionObserver
   });
 
   const observer = new IntersectionObserver(function(entries){
+    const currentY = window.scrollY || 0;
+    if (currentY >= lastY) direction = 'down';
+    else direction = 'up';
+    lastY = currentY;
+
     entries.forEach(function(entry){
       if (entry.isIntersecting) {
         entry.target.classList.toggle('from-bottom', direction === 'up');
