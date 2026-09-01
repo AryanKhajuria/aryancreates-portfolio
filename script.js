@@ -1,0 +1,1 @@
+const reveal=document.querySelectorAll('.card,.service-grid>div,.stats div,.about-copy>p');const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.08});reveal.forEach(e=>io.observe(e));
