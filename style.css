@@ -98,3 +98,20 @@
  .why{padding-top:65px;padding-bottom:65px}
  .why>h2{font-size:54px}
 }
+
+/* V10 refinements */
+.hero-brand img{width:218px;height:157px}
+.hero-brand span{margin-top:-2px}
+.minimal-hero h1{font-size:clamp(40px,5.75vw,81px)}
+.two h2{font-size:clamp(48px,6.2vw,92px)}
+.contact-options{grid-template-columns:repeat(4,1fr);max-width:1250px}
+.youtube-option b{color:#ff3b30}
+@media(max-width:1000px){
+ .contact-options{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:800px){
+ .hero-brand img{width:172px;height:124px}
+ .minimal-hero h1{font-size:48px}
+ .two h2{font-size:50px}
+ .contact-options{grid-template-columns:1fr}
+}
