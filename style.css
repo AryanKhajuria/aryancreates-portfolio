@@ -204,3 +204,29 @@ body{letter-spacing:-.01em}
 .service-list span:hover{ text-shadow:none }
 
 .wa{display:none!important}
+
+/* V17 — repeatable scroll animations */
+.reveal-on-scroll{
+  opacity:0;
+  transform:translateY(55px);
+  transition:opacity .75s cubic-bezier(.22,.61,.36,1),transform .75s cubic-bezier(.22,.61,.36,1);
+  will-change:opacity,transform;
+}
+.reveal-on-scroll.is-visible{
+  opacity:1;
+  transform:translateY(0);
+}
+.reveal-on-scroll.from-bottom{
+  transform:translateY(-55px);
+}
+.reveal-on-scroll.from-bottom.is-visible{
+  transform:translateY(0);
+}
+.reveal-on-scroll[data-delay="1"]{transition-delay:.08s}
+.reveal-on-scroll[data-delay="2"]{transition-delay:.16s}
+.reveal-on-scroll[data-delay="3"]{transition-delay:.24s}
+@media (prefers-reduced-motion:reduce){
+  .reveal-on-scroll,.reveal-on-scroll.from-bottom{
+    opacity:1;transform:none;transition:none;
+  }
+}
