@@ -1,0 +1,7 @@
+FINAL VIDEO SETUP
+Reels/Shorts #1: YouTube fHTi_8zCvXY
+Reels/Shorts #2: YouTube 9HWWMwozYww
+Gaming: bundled uploaded FH6 Piyush video
+Before vs After: YouTube dz0PX_9SeJc
+
+The three YouTube videos are embedded directly in the website with YouTube's player and fullscreen support. Gaming is bundled locally and uses the native browser video player.

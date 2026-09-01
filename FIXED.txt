@@ -1,0 +1,12 @@
+FIXED VERSION
+
+The missing Before vs After project has been added as project 04.
+YouTube video: https://youtu.be/dz0PX_9SeJc
+
+Order:
+01 Reels / Shorts #1
+02 Reels / Shorts #2
+03 Gaming
+04 Before vs After
+
+Replace the files in your GitHub repository with this package.
