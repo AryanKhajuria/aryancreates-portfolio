@@ -39,3 +39,16 @@
  .service-list{grid-template-columns:1fr}
  .service-list span{padding:16px 14px}
 }
+
+/* V8 — responsive aspect ratios, no stretching */
+.projects{align-items:start}
+.reel-card .video{aspect-ratio:9/16;height:auto;max-width:430px;margin:0 auto}
+.reel-card .video video,.reel-card .video iframe{aspect-ratio:9/16;object-fit:contain;background:#080808}
+.landscape-card .video{aspect-ratio:16/9;height:auto}
+.landscape-card .video video,.landscape-card .video iframe{aspect-ratio:16/9;object-fit:contain;background:#080808}
+.card.big.reel-card{grid-row:auto}
+@media(max-width:800px){
+ .projects{grid-template-columns:1fr}
+ .reel-card .video{width:min(100%,390px);margin-inline:auto}
+ .landscape-card .video{width:100%}
+}
