@@ -52,3 +52,49 @@
  .reel-card .video{width:min(100%,390px);margin-inline:auto}
  .landscape-card .video{width:100%}
 }
+
+/* V9 refinements */
+.minimal-hero{min-height:calc(100vh - 86px);justify-content:flex-start;padding:34px 5.5vw 70px}
+.minimal-top{display:flex;align-items:flex-start;justify-content:space-between;width:100%}
+.hero-brand{display:flex;flex-direction:column;align-items:flex-start;gap:7px}
+.hero-brand img{width:145px;height:105px;object-fit:contain}
+.hero-brand span{font:11px "DM Mono";letter-spacing:.20em;color:#eee}
+.hero-brand span em{color:var(--a);font-style:normal}
+.minimal-kicker{font:11px "DM Mono";letter-spacing:.16em;color:var(--a);padding-top:16px}
+.minimal-center{max-width:900px;margin:48px auto 0;text-align:center}
+.hero-name{font:600 20px "DM Mono";letter-spacing:.14em;color:#aaa;margin-bottom:24px}
+.hero-name span{color:#eee}
+.minimal-hero h1{font-size:clamp(50px,7.2vw,101px);line-height:.82;letter-spacing:-.075em;margin:0}
+.minimal-hero p{max-width:510px;margin:28px auto 0}
+.minimal-bottom{bottom:24px}
+#work .intro p{display:none}
+.landscape-card[data-c="before"] .video{max-width:720px;margin-left:auto;margin-right:auto}
+.landscape-card[data-c="before"] .video video,.landscape-card[data-c="before"] .video iframe{max-height:405px}
+.why{padding-top:82px;padding-bottom:82px}
+.why>h2{font-size:clamp(50px,6.5vw,88px);margin-bottom:42px}
+.whygrid>div{min-height:175px;padding:22px}
+.whygrid h3{margin:35px 0 10px;font-size:24px}
+.contact{padding:105px 5.5vw 125px}
+.contact h2{font-size:clamp(55px,7vw,100px);margin:20px 0 0}
+.contact-lead{color:#888;font-size:15px;margin:18px 0 35px}
+.contact-options{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:1100px;margin:0 auto}
+.contact-option{min-height:170px;border:1px solid #303030;padding:27px 25px;display:flex;flex-direction:column;justify-content:flex-end;text-align:left;transition:.25s}
+.contact-option b{font:700 18px "DM Mono";letter-spacing:.08em;margin-bottom:9px}
+.contact-option span{font:12px "DM Mono";color:#777;min-height:35px}
+.contact-option strong{align-self:flex-end;font-size:25px;margin-top:12px;font-weight:400}
+.contact-option:hover{transform:translateY(-5px);border-color:#168cff;background:#168cff0d}
+.whatsapp-option b{color:#45d66b}.instagram-option b{color:#f05aa8}.email-option b{color:#168cff}
+@media(max-width:800px){
+ .minimal-hero{min-height:calc(100vh - 74px);padding:25px 5vw 70px}
+ .hero-brand img{width:115px;height:82px}
+ .hero-brand span{font-size:8px;letter-spacing:.15em}
+ .minimal-kicker{font-size:8px;padding-top:8px;text-align:right;max-width:125px}
+ .minimal-center{margin-top:55px}
+ .hero-name{font-size:12px;letter-spacing:.1em}
+ .minimal-hero h1{font-size:50px}
+ .contact{padding:80px 5vw 95px}
+ .contact-options{grid-template-columns:1fr}
+ .contact-option{min-height:145px}
+ .why{padding-top:65px;padding-bottom:65px}
+ .why>h2{font-size:54px}
+}
