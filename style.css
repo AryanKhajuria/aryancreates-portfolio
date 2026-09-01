@@ -115,3 +115,17 @@
  .two h2{font-size:50px}
  .contact-options{grid-template-columns:1fr}
 }
+
+/* V11 — right-side centered logo */
+.minimal-top{min-height:180px;display:grid;grid-template-columns:1fr 1fr;align-items:center}
+.hero-brand-right{justify-self:center;align-items:center;text-align:center}
+.hero-brand-right img{width:270px;height:195px}
+.hero-brand-right span{font-size:13px;letter-spacing:.24em}
+.minimal-center{margin:34px auto 0}
+@media(max-width:800px){
+ .minimal-top{min-height:145px;grid-template-columns:1fr}
+ .hero-brand-right{justify-self:center}
+ .hero-brand-right img{width:205px;height:148px}
+ .hero-brand-right span{font-size:10px;letter-spacing:.18em}
+ .minimal-center{margin-top:30px}
+}
